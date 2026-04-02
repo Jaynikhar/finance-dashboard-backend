@@ -21,7 +21,7 @@ export const getUserById = asyncHandler(async (req, res) => {
 
 // Update user role or status
 export const updateUser = asyncHandler(async (req, res) => {
-  const { role, isActive } = req.body;
+  const { name, email, role, isActive } = req.body;
 
   const user = await User.findById(req.params.id);
 
@@ -29,6 +29,8 @@ export const updateUser = asyncHandler(async (req, res) => {
     return res.status(404).json({ message: "User not found" });
   }
 
+  if (name) user.name = name;
+  if (email) user.email = email;
   if (role) user.role = role;
   if (isActive !== undefined) user.isActive = isActive;
 
