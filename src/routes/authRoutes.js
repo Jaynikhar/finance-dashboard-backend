@@ -25,7 +25,7 @@ const router = express.Router();
  *           example:
  *             name: Jay
  *             email: jay@gmail.com
- *             password: 123456
+ *             password: "123456"
  *     responses:
  *       201:
  *         description: User registered
@@ -45,7 +45,7 @@ router.post("/register", register);
  *         application/json:
  *           example:
  *             email: jay@gmail.com
- *             password: 123456
+ *             password: "123456"
  *     responses:
  *       200:
  *         description: Login successful
