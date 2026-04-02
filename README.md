@@ -72,21 +72,18 @@ A scalable backend system built for managing financial records, user roles, and 
 
 # ### Records API Response
 # ![Records](./screenshots/records-response.png)
-# ![Update_Records](./screenshots/update-records.png)
+# ![UpdateRecords](./screenshots/update-records.png)
 
 # ### Analytics Dashboard
 # ![Analytics](./screenshots/analytics-api.png)
-# ![Analytics_Response](./screenshots/analytics-response.png)
+# ![AnalyticsResponse](./screenshots/analytics-response.png)
 
 
 
 # ###  Authorization
 # ![Auth](./screenshots/auth-records-user-api.png)
 # ![Authorization](./screenshots/authorization.png)
-# ![User_registered](./screenshots/user-registered.png)
-
-
-
+# ![Userregistered](./screenshots/user-registered.png)
 
 ---
 
