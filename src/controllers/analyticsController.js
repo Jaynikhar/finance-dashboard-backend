@@ -32,6 +32,7 @@ export const getSummary = asyncHandler(async (req, res) => {
   });
 });
 
+
 //Get categorywise summary
 export const getCategorySummary = asyncHandler(async (req, res) => {
   const userId = req.user._id;
@@ -54,8 +55,11 @@ export const getCategorySummary = asyncHandler(async (req, res) => {
 
 //Get monthly analytics 
 export const getMonthlyAnalytics = asyncHandler(async (req, res) => {
+
+  const userId = req.user._id;
+
   const data = await Record.aggregate([
-    { $match: { user: req.user._id } },
+    { $match: { user: userId } },
     {
       $group: {
         _id: { $month: "$createdAt" },
