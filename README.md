@@ -64,16 +64,6 @@ A scalable backend system built for managing financial records, user roles, and 
 - GET `/api/records/category-summary`
 - GET `/api/records/monthly`
 
----
-
-## Setup Instructions
-
-```bash
-git clone https://github.com/Jaynikhar/finance-dashboard-backend.git
-cd finance-dashboard-backend
-npm install
-
-
 
 # ## Screenshots
 
@@ -97,32 +87,13 @@ npm install
 
 
 
-## Screenshots
 
-### Swagger API Docs
-screenshots/swagger.png
+---
 
-### Records API Response
-screenshots/records-response.png
-![Update_Records](./screenshots/update-records.png)
+## Setup Instructions
 
-### Analytics Dashboard
-screenshots/analytics-api.png
-![Analytics_Response](./screenshots/analytics-response.png)
+```bash
+git clone https://github.com/Jaynikhar/finance-dashboard-backend.git
+cd finance-dashboard-backend
+npm install
 
-
-
-###  Authorization
-/screenshots/auth-records-user-api.png
-/screenshots/authorization.png
-/screenshots/user-registered.png
-./screenshots/user-login.png
-
-
-### User
-./screenshots/show-all-users.png
-./screenshots/user-login.png
-
-
-### User
-./screenshots/show-all-users.png
