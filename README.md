@@ -72,3 +72,28 @@ A scalable backend system built for managing financial records, user roles, and 
 git clone https://github.com/Jaynikhar/finance-dashboard-backend.git
 cd finance-dashboard-backend
 npm install
+
+## Screenshots
+
+### Swagger API Docs
+![Swagger](./screenshots/swagger.png)
+
+### Records API Response
+![Records](./screenshots/records-response.png)
+![Update_Records](./screenshots/update-records.png)
+
+### Analytics Dashboard
+![Analytics](./screenshots/analytics-api.png)
+![Analytics_Response](./screenshots/analytics-response.png)
+
+
+
+###  Authorization
+![Auth](./screenshots/auth-records-user-api.png)
+![Authorization](./screenshots/authorization.png)
+![User_registered](./screenshots/user-registered.png)
+![User_Login](./screenshots/user-login.png)
+
+
+### User
+![User](./screenshots/show-all-users.png)
