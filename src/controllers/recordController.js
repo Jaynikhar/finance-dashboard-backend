@@ -1,6 +1,7 @@
 import Record from "../models/Record.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
+//Create record
 export const createRecord = asyncHandler(async (req, res) => {
   if (!req.body) {
     return res.status(400).json({ message: "Request body is missing" });
@@ -20,6 +21,7 @@ export const createRecord = asyncHandler(async (req, res) => {
   res.status(201).json(record);
 });
 
+//Get record
 export const getRecords = asyncHandler(async (req, res) => {
   const { page = 1, limit = 5, type, category } = req.query;
 
@@ -43,6 +45,7 @@ export const getRecords = asyncHandler(async (req, res) => {
   });
 });
 
+//Update record
 export const updateRecord = asyncHandler(async (req, res) => {
 
   const record = await Record.findById(req.params.id);
@@ -59,6 +62,7 @@ export const updateRecord = asyncHandler(async (req, res) => {
   res.json(record);
 });
 
+//Delete record
 export const deleteRecord = asyncHandler(async (req, res) => {
   await Record.findByIdAndDelete(req.params.id);
   res.json({ message: "Deleted" });

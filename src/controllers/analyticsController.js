@@ -1,7 +1,7 @@
 import Record from "../models/Record.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
-
+//Get summary
 export const getSummary = asyncHandler(async (req, res) => {
 
   const userId = req.user._id;
@@ -32,6 +32,7 @@ export const getSummary = asyncHandler(async (req, res) => {
   });
 });
 
+//Get categorywise summary
 export const getCategorySummary = asyncHandler(async (req, res) => {
   const userId = req.user._id;
 
@@ -51,6 +52,7 @@ export const getCategorySummary = asyncHandler(async (req, res) => {
   res.json(data);
 });
 
+//Get monthly analytics 
 export const getMonthlyAnalytics = asyncHandler(async (req, res) => {
   const data = await Record.aggregate([
     { $match: { user: req.user._id } },

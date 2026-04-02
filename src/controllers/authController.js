@@ -3,12 +3,14 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
+//JWT Token generation
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
     expiresIn: "7d"
   });
 };
 
+//User register
 export const register = asyncHandler(async (req, res) => {
   const { name, email, password, role } = req.body;
 
@@ -32,6 +34,7 @@ export const register = asyncHandler(async (req, res) => {
   });
 });
 
+//User login
 export const login = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 

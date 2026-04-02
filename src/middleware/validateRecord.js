@@ -1,5 +1,4 @@
-
-
+//validation
 export const validateRecord = (req, res, next) => {
   const { amount, type } = req.body;
 
